@@ -29,3 +29,4 @@ end
 puts decode_message('-- -.--  -. .- -- .')
 puts decode_message('.. .-.. --- ...- . -.-- --- ..-')
 puts decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+puts decode_message('... .- .. -..')
