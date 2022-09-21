@@ -9,7 +9,7 @@ def decode_char(str)
 end
 
 def decode_word(word)
-  morse = word.split(' ')
+  morse = word.split
   word = ''
   morse.each do |code|
     word = "#{word}#{decode_char(code)}"
@@ -18,7 +18,7 @@ def decode_word(word)
 end
 
 def decode_message(msg_coded)
-  morse = msg_coded.split(/   /)
+  morse = msg_coded.split(/ /)
   msg = ''
   morse.each do |word|
     msg = "#{msg} #{decode_word(word)}"
@@ -26,5 +26,6 @@ def decode_message(msg_coded)
   msg
 end
 
-puts decode_message('-- -.--   -. .- -- .')
+puts decode_message('-- -.--  -. .- -- .')
+puts decode_message('.. .-.. --- ...- . -.-- --- ..-')
 puts decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
