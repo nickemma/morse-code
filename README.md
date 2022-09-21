@@ -38,6 +38,12 @@ Simple decoder for Morse messages.
 - Twitter: [@techieEmma](https://twitter.com/techieEmma)
 - LinkedIn: [@Nicholas Emmanuel](https://www.linkedin.com/in/techieemma/)
 
+👤 **Taheny BELGUITH**
+
+- GitHub: [@TahenyBELGUITH](https://github.com/TahenyBELGUITH)
+- Twitter: [@BelguithTaheny](https://twitter.com/BelguithTaheny)
+- LinkedIn: [@belguith taheny](https://www.linkedin.com/in/belguith-taheny/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
