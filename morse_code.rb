@@ -1,26 +1,26 @@
 def decode_char(str)
   result = {
-    '.-' => 'A', '-...' => 'B', '-.-.' => 'C', '-..' => 'D', '.' => 'E', '..-.' => 'F', '--.' => 'G',
-    '....' => 'H', '..' => 'I', '.---' => 'J', '-.-' => 'K', '.-..' => 'L', '--' => 'M', '-.' => 'N',
-    '---' => 'O', '.--.' => 'P', '--.-' => 'Q', '.-.' => 'R', '...' => 'S', '-' => 'T', '..-' => 'U',
-    '...-' => 'V', '.--' => 'W', '-..-' => 'X',	'-.--' => 'Y', '--..' => 'Z'
+    '.-' => 'a', '-...' => 'b', '-.-.' => 'c', '-..' => 'd', '.' => 'e', '..-.' => 'f', '--.' => 'g',
+    '....' => 'h', '..' => 'i', '.---' => 'j', '-.-' => 'k', '.-..' => 'l', '--' => 'm', '-.' => 'n',
+    '---' => 'o', '.--.' => 'p', '--.-' => 'q', '.-.' => 'r', '...' => 's', '-' => 't', '..-' => 'u',
+    '...-' => 'v', '.--' => 'w', '-..-' => 'x',	'-.--' => 'y', '--..' => 'z'
   }
-  result[str]
+  result[str].upcase
 end
 
 def decode_word(word)
-  array = word.split(/ /)
+  morse = word.split(' ')
   word = ''
-  array.each do |char|
-    word = "#{word}#{decode_char(char)}"
+  morse.each do |code|
+    word = "#{word}#{decode_char(code)}"
   end
   word
 end
 
 def decode_message(msg_coded)
-  array = msg_coded.split(/   /)
+  morse = msg_coded.split(/   /)
   msg = ''
-  array.each do |word|
+  morse.each do |word|
     msg = "#{msg} #{decode_word(word)}"
   end
   msg
