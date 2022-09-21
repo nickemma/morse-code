@@ -8,7 +8,6 @@ def decode_char(str)
   result[str].upcase
 end
 
-# ========= First solution ============ 
 # def decode_word(data)
 #   data.split(' ').map{ |c| decode_char(c) }.join
 # end
@@ -20,7 +19,6 @@ end
 # puts decode_morse('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
 # puts decode_morse('-- -.--  -. .- -- .')
 
-# ========= second solution ============ 
 def decode_word(word)
   morse = word.split(/ /)
   word = ''
