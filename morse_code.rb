@@ -9,7 +9,7 @@ def decode_char(str)
 end
 
 def decode_word(word)
-  morse = word.split
+  morse = word.split(/ /)
   word = ''
   morse.each do |code|
     word = "#{word}#{decode_char(code)}"
