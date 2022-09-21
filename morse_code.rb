@@ -8,6 +8,19 @@ def decode_char(str)
   result[str].upcase
 end
 
+# ========= First solution ============ 
+# def decode_word(data)
+#   data.split(' ').map{ |c| decode_char(c) }.join
+# end
+
+# def decode_morse(data)
+#   data.split('  ').map{ |w| decode_word(w) }.join(' ')
+# end
+
+# puts decode_morse('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+# puts decode_morse('-- -.--  -. .- -- .')
+
+# ========= second solution ============ 
 def decode_word(word)
   morse = word.split(/ /)
   word = ''
@@ -27,6 +40,6 @@ def decode_message(msg_coded)
 end
 
 puts decode_message('-- -.--  -. .- -- .')
-puts decode_message('.. .-.. --- ...- . -.-- --- ..-')
 puts decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+puts decode_message('.. .-.. --- ...- . -.-- --- ..-')
 puts decode_message('... .- .. -..')
